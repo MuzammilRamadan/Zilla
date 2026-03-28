@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "msedge",
             "request": "launch",
-            "name": "Open m.html",
-            "file": "c:\\Users\\Administrator\\Desktop\\Doomed\\muzamil\\m.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\Administrator\\Desktop\\soso\\index.html"
         }
     ]
 }
