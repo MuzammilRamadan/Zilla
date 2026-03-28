@@ -1,4 +1,4 @@
-/* Reset default margins and padding */
+/* تنسيق أساسي للصفحة */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
+    /* خلفية متدرجة فخمة للمناسبة */
+    background: linear-gradient(135deg, #1e3a8a, #4f46e5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,21 +16,39 @@ body {
     color: #333;
 }
 
-.container {
-    text-align: center;
+/* تنسيق الكارد الأبيض */
+.card {
     background: white;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
+/* حركة بسيطة عند تمرير الماوس */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* تنسيق الأيقونة (الإيموجي) */
+.icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+/* تنسيق النص الأساسي */
 h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    margin-bottom: 10px;
+    font-size: 2.8rem;
+    color: #1e3a8a;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-weight: 800;
 }
 
+/* تنسيق النص الفرعي */
 p {
-    font-size: 1.1rem;
-    color: #7f8c8d;
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: normal;
 }
